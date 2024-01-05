@@ -1,0 +1,143 @@
+Module                  Size  Used by
+ccm                    20480  6
+hid_logitech_hidpp     77824  0
+hid_logitech_dj        40960  0
+usbhid                 77824  2 hid_logitech_dj,hid_logitech_hidpp
+joydev                 24576  0
+mousedev               24576  0
+intel_rapl_msr         20480  0
+intel_rapl_common      40960  1 intel_rapl_msr
+snd_sof_amd_rembrandt    16384  0
+edac_mce_amd           53248  0
+snd_sof_amd_renoir     16384  0
+snd_sof_amd_acp        57344  2 snd_sof_amd_rembrandt,snd_sof_amd_renoir
+snd_sof_pci            24576  2 snd_sof_amd_rembrandt,snd_sof_amd_renoir
+kvm_amd               204800  0
+snd_sof_xtensa_dsp     16384  1 snd_sof_amd_acp
+snd_sof               421888  2 snd_sof_amd_acp,snd_sof_pci
+rtw88_8822be           12288  0
+snd_sof_utils          16384  1 snd_sof
+kvm                  1368064  1 kvm_amd
+snd_ctl_led            24576  0
+rtw88_8822b           229376  1 rtw88_8822be
+snd_soc_core          458752  1 snd_sof
+snd_hda_codec_conexant    32768  1
+btusb                  81920  0
+snd_hda_codec_generic   114688  1 snd_hda_codec_conexant
+irqbypass              12288  1 kvm
+rtw88_pci              40960  1 rtw88_8822be
+crct10dif_pclmul       12288  1
+snd_compress           28672  1 snd_soc_core
+btrtl                  28672  1 btusb
+snd_hda_codec_hdmi     94208  1
+btbcm                  24576  1 btusb
+ac97_bus               12288  1 snd_soc_core
+uvcvideo              176128  0
+crc32_pclmul           12288  0
+rtw88_core            327680  2 rtw88_pci,rtw88_8822b
+snd_pcm_dmaengine      16384  1 snd_soc_core
+polyval_clmulni        12288  0
+btintel                57344  1 btusb
+snd_hda_intel          65536  4
+snd_pci_ps             28672  0
+videobuf2_vmalloc      20480  1 uvcvideo
+polyval_generic        12288  1 polyval_clmulni
+btmtk                  12288  1 btusb
+gf128mul               16384  1 polyval_generic
+uvc                    12288  1 uvcvideo
+snd_intel_dspcfg       32768  2 snd_hda_intel,snd_sof
+snd_rpl_pci_acp6x      16384  0
+ghash_clmulni_intel    16384  0
+videobuf2_memops       16384  1 videobuf2_vmalloc
+mac80211             1572864  2 rtw88_pci,rtw88_core
+sha512_ssse3           53248  0
+videobuf2_v4l2         40960  1 uvcvideo
+bluetooth            1110016  6 btrtl,btmtk,btintel,btbcm,btusb
+snd_intel_sdw_acpi     16384  1 snd_intel_dspcfg
+aesni_intel           360448  4
+videodev              389120  2 videobuf2_v4l2,uvcvideo
+snd_acp_pci            12288  0
+crypto_simd            16384  1 aesni_intel
+snd_hda_codec         225280  4 snd_hda_codec_generic,snd_hda_codec_conexant,snd_hda_codec_hdmi,snd_hda_intel
+r8169                 114688  0
+libarc4                12288  1 mac80211
+snd_pci_acp6x          20480  0
+videobuf2_common       94208  4 videobuf2_vmalloc,videobuf2_v4l2,uvcvideo,videobuf2_memops
+cryptd                 28672  2 crypto_simd,ghash_clmulni_intel
+snd_pci_acp5x          16384  0
+ucsi_acpi              12288  0
+realtek                40960  1
+snd_hda_core          151552  5 snd_hda_codec_generic,snd_hda_codec_conexant,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec
+rapl                   20480  0
+snd_rn_pci_acp3x       24576  0
+mc                     90112  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
+typec_ucsi             65536  1 ucsi_acpi
+ecdh_generic           16384  1 bluetooth
+snd_hwdep              20480  1 snd_hda_codec
+mdio_devres            12288  1 r8169
+think_lmi              36864  0
+vfat                   20480  1
+psmouse               233472  0
+snd_acp_config         16384  7 snd_rn_pci_acp3x,snd_pci_acp6x,snd_pci_acp5x,snd_sof_amd_rembrandt,snd_acp_pci,snd_pci_ps,snd_sof_amd_renoir
+pcspkr                 12288  0
+snd_pcm               204800  12 snd_sof_amd_acp,snd_hda_codec_hdmi,snd_pci_acp6x,snd_hda_intel,snd_hda_codec,snd_sof,snd_compress,snd_soc_core,snd_sof_utils,snd_hda_core,snd_pci_ps,snd_pcm_dmaengine
+sp5100_tco             20480  0
+cfg80211             1335296  2 rtw88_core,mac80211
+firmware_attributes_class    12288  1 think_lmi
+acpi_cpufreq           32768  0
+crc16                  12288  1 bluetooth
+fat                   106496  1 vfat
+typec                 114688  1 typec_ucsi
+ccp                   159744  1 kvm_amd
+snd_soc_acpi           12288  2 snd_sof_amd_acp,snd_acp_config
+libphy                229376  3 r8169,mdio_devres,realtek
+k10temp                16384  0
+wmi_bmof               12288  0
+snd_timer              53248  1 snd_pcm
+i2c_piix4              32768  0
+snd_pci_acp3x          16384  0
+roles                  16384  1 typec_ucsi
+i2c_scmi               16384  0
+mac_hid                12288  0
+crypto_user            20480  0
+fuse                  204800  3
+loop                   40960  0
+dm_mod                225280  0
+ip_tables              36864  0
+x_tables               69632  1 ip_tables
+xfs                  2781184  1
+libcrc32c              12288  1 xfs
+crc32c_generic         12288  0
+amdgpu              12316672  54
+i2c_algo_bit           20480  1 amdgpu
+drm_ttm_helper         12288  1 amdgpu
+ttm                   110592  2 amdgpu,drm_ttm_helper
+thinkpad_acpi         196608  0
+drm_suballoc_helper    12288  1 amdgpu
+rtsx_pci_sdmmc         32768  0
+ledtrig_audio          12288  3 snd_ctl_led,snd_hda_codec_generic,thinkpad_acpi
+serio_raw              16384  0
+amdxcp                 12288  1 amdgpu
+atkbd                  40960  0
+platform_profile       12288  1 thinkpad_acpi
+drm_buddy              20480  1 amdgpu
+libps2                 20480  2 atkbd,psmouse
+mmc_core              270336  1 rtsx_pci_sdmmc
+vivaldi_fmap           12288  1 atkbd
+gpu_sched              57344  1 amdgpu
+snd                   155648  21 snd_ctl_led,snd_hda_codec_generic,snd_hda_codec_conexant,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_sof,snd_timer,snd_compress,thinkpad_acpi,snd_soc_core,snd_pcm
+nvme                   65536  4
+crc32c_intel           16384  1
+soundcore              16384  2 snd_ctl_led,snd
+drm_display_helper    229376  1 amdgpu
+xhci_pci               28672  0
+rfkill                 40960  7 bluetooth,thinkpad_acpi,cfg80211
+nvme_core             245760  5 nvme
+cec                    86016  1 drm_display_helper
+xhci_pci_renesas       24576  1 xhci_pci
+rtsx_pci              131072  1 rtsx_pci_sdmmc
+i8042                  53248  0
+video                  77824  2 thinkpad_acpi,amdgpu
+nvme_common            24576  1 nvme_core
+serio                  28672  7 serio_raw,atkbd,psmouse,i8042
+wmi                    45056  3 video,wmi_bmof,think_lmi
